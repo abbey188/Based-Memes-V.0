@@ -50,7 +50,7 @@ function App() {
   }, [debouncedSearchTerm]);
 
   return (
-    <div className="m-0 bg-[#0A0A0A] p-0 font-inter text-neutral-200">
+    <div className="m-0 bg-[#FFFFF0] p-0 font-inter text-black">
       <Header />
 
       <Helmet>
@@ -74,7 +74,7 @@ function App() {
           </div>
         ) : null}
 
-        <div className="mx-auto mb-8 flex h-12 w-96 max-w-full items-center rounded-lg border border-white/10 bg-white/5 px-4 text-xl text-white">
+        <div className="mx-auto mb-8 flex h-12 w-96 max-w-full items-center rounded-lg border border-white/10 bg-white/85npm px-4 text-xl text-white">
           <SearchIcon />
           <input
             type="number"
@@ -88,7 +88,7 @@ function App() {
                 setSearch("");
               }
             }}
-            placeholder="Search by Token ID"
+            placeholder="Search MEMES"
             className="w-full bg-transparent px-4 text-white focus:outline-none"
           />
         </div>
@@ -105,7 +105,7 @@ function App() {
           <div className="mx-auto flex flex-wrap items-center justify-center gap-8">
             {Array.from({ length: nftsPerPage }).map((_, i) => (
               <div
-                className="!h-60 !w-60 animate-pulse rounded-lg bg-gray-800"
+                className="!h-60 !w-60 animate-pulse rounded-lg bg-blue-600"
                 key={i}
               />
             ))}
