@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
             </>
           ) : (
             <>
-              <img
+              {/* <img
                 className="h-10 w-10 rounded-full object-contain"
                 src={contractMetadata?.image || firstNFT?.metadata.image || ""}
                 alt={
@@ -32,9 +32,10 @@ export const Header: React.FC = () => {
                   String(firstNFT?.metadata.name) ||
                   ""
                 }
-              />
-              <p className="text-2xl font-bold text-white">
-                {contractMetadata?.name || firstNFT?.metadata.name}{" "}
+              /> */}
+              <p className="text-2xl font-bold text-blue-600 justify-start">
+                {/* {contractMetadata?.name || firstNFT?.metadata.name}{" "} */}
+                BasedMemes
               </p>
             </>
           )}
@@ -42,7 +43,7 @@ export const Header: React.FC = () => {
       </Link>
 
       <div className="max-w-xs">
-        <ConnectButton client={client} theme="dark" />
+        <ConnectButton client={client} theme="light" />
       </div>
     </header>
   );

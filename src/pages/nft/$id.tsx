@@ -71,9 +71,7 @@ const NFTPage = () => {
             <div className="mt-2 hidden h-8 w-1/2 animate-pulse rounded-lg bg-gray-800 md:flex" />
           ) : (
             <div className="mt-4 hidden flex-col gap-4 md:flex">
-              {eventsData?.map((event) => (
-                <HistoryCard event={event} />
-              ))}
+              {eventsData?.map((event) => <HistoryCard event={event} />)}
             </div>
           )}
         </div>
@@ -197,9 +195,7 @@ const NFTPage = () => {
               <div className="mt-2 flex h-8 w-1/2 animate-pulse rounded-lg bg-gray-800 md:hidden" />
             ) : (
               <div className="mt-4  flex flex-col gap-4 md:hidden">
-                {eventsData?.map((event) => (
-                  <HistoryCard event={event} />
-                ))}
+                {eventsData?.map((event) => <HistoryCard event={event} />)}
               </div>
             )}
           </div>
